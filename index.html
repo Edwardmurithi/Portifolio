@@ -10,11 +10,11 @@
 <body>
     <!-- header section -->
    <header class="header">
-        <nav class="navbar container">
-            <h1 class="logo">
-                <a href="#index.html">Edward</a>
+        <nav class="navbar container flex">
+            <h1 class="logo" id="Home">
+                <a href="index.html">Edward Mutethia</a>
             </h1>     
-            <ul>
+            <ul class="flex" >
                 <li><a href="#index">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
@@ -30,10 +30,9 @@
        <!-- hero section -->
         <section class="hero-section" id="index">
             <div class="hero-ctn">
-                <h2 class="greetings">Hi, I'm Edward</h2>
+                <h2 class="greetings">Transforming Ideas Into Digital Excellence</h2>
                 <p class="description">
-                    I i'm a seasoned <span class="career">Full Stack Software Engineer</span>.
-                    I specialize in front-end and <br> back-end software development streamlining your  digital world.
+                    Creative Solutions for Web Development, Design, and Beyond.
                 </p>
                 <a href="#projects" ><button class="btn">View my work</button></a>
                 <a href="#contacts" ><button class="btn btn-connect">Let Connect</button></a>
@@ -42,7 +41,7 @@
         
         <!-- about section -->
          <section class="about container" id="about">
-            <p id="description">Get to know me</p>
+            <p id="description">Who I Am</p>
             <h2>About Me</h2>
             <div class="about-container grid">
                 <div class="img-ctn">
@@ -60,35 +59,144 @@
          </section>
 
          <!-- services section -->
-         <section class="services container">
-            <p id="description">What I Offer</p>
+         <section class="services container" id="services">
+            <p id="description">What I Do</p>
             <h2>Services</h2>
-            <p>I offer defferent IT Services that can help you sky-rocket you business in this digital space</p>
+            <p>
+                I offer a wide range of professional services to help businesses grow, streamline operations, and deliver exceptional digital experiences. Whether you need stunning visuals, a robust web presence, or technical support, I'm here to bring your ideas to life.
+            </p>
             <div class="service-list grid">
                 <div class="service-item">
-                    <h4>Technical support</h4>
+                    <h4>Web Development & Hosting</h4>
+                    <p>
+                        Empowering your online presence with mordern websites and reliable hosting. Get Custom Website Development,
+                        E-commerce Solutions, Hosting & Domain Management, SEO Optimization for better visibility in search engines.
+                    </p>
                 </div>
                 <div class="service-item">
-                    <h4>Technical support</h4>
+                    <h4>UI/UX Design</h4>
+                    <p>Designing user-centered experiences that delight.</p>
+                    <p>Prototyping & Wireframing, Usability Testing, and Accessibility Audits.</p>
                 </div>
                 <div class="service-item">
-                    <h4>Technical support</h4>
+                    <h4>Mobile App Development</h4>
+                    <p>Get powerful mobile solutions for Android and IOS.</p>
+                    <p>Custom App Development, Cross-Platform Apps, Integration with APIs, Maintenance and Updates</p>
                 </div>
                 <div class="service-item">
-                    <h4>Technical support</h4>
+                    <h4>Graphic Design</h4>
+                    <p>Visual storytelling that captivates and communicates.</p>
+                    <p>Get Custom Logo Design, Branding Packages, Digital & Print Design, Illustrations and Infographics.</p>
+                </div>
+                <div class="service-item item5">
+                    <h4>Technical Support</h4>
+                    <p>Get reliable support ie, System Troubleshooting, Network Setup & Maintenance, Device Installation & Configuration and IT Consultation to keep your systems running smoothly</p>
                 </div>
             </div>
+            <!-- end services -->
          </section>
+         
+         <!-- Project Section  -->
+         <section class="projects-ctn container" id="projects">
+            <p id="description">My work</p>
+            <h2>Projects</h2>
+            <p>
+                Here are some of the projects I've worked on, showcasing my skills in design, development, and problem solving.
+            </p>
+            <div class="project-list grid">
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="/assets/img/campusconnect.webp" alt="CampusConnect image">
+                    </div>
+                    <h3>CampusConnect App</h3>
+                    <div class="project-btn">
+                        <a href="https//github.com/Edwardmurithi:"><button class="btn">GitHub</button></a>
+                        <a href=""><button class="btn">Live Demo</button></a>
+                    </div>
+                </div>
 
-      
-         <section class="projects-ctn"></section>
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="/assets/img/project-1.png" alt="Social Network image">
+                    </div>
+                    <h3>Social Network</h3>
+                    <div class="project-btn">
+                        <a href="https//github.com/Edwardmurithi:"><button class="btn">GitHub</button></a>
+                        <a href=""><button class="btn">Live Demo</button></a>
+                    </div>
+                </div>
 
-      
-         <section class="contact-ctn"></section>
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="/assets/img/project-2.png" alt="remider App">
+                    </div>
+                    <h3>Remider</h3>
+                    <div class="project-btn">
+                        <a href="https//github.com/Edwardmurithi:"><button class="btn">GitHub</button></a>
+                        <a href=""><button class="btn">Live Demo</button></a>
+                    </div>
+                </div>
+            </div>
+            <!-- end projects -->
+         </section>
+        
+         <!-- Contact Section -->
+         <section class="contact-section container" id="contacts">
+            <p id="description">Let's Work Together</p>
+            <h2>Contact Me</h2>
+            <p>Have a project in mind? Need support? I'd love to here from you. Get in touch and lets create something amazing</p>
+            <p>Send me a message, and I'll get back to you as soon as possible.</p>
+            <div class="contact-ctn grid">
+                <div class="contact-details">
+                    <div class="address address-info">
+                        <h4>Address</h4>
+                        <p>158, Runyenjes, Embu</p>
+                    </div>
+                    <div class="email address-info">
+                        <h4>Email</h4>
+                        <p>murithiedward330@gmail.com</p>
+                    </div>
+                    <div class="phone address-info">
+                        <h4>Phone</h4>
+                        <p>+254708194272</p>
+                    </div>
+
+                    <ul class="social-links">
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <form action="">
+                        <div>
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div>
+                            <textarea name="content" id="content" placeholder="Enter Your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-send">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <!-- end contact -->
+         </section>
     </main>
+    <!-- end main -->
 
- 
-     <footer class="footer-ctn"></footer>
+    <!-- footer section -->
+     <footer class="footer-ctn">
+        <p>&copy; <i id="year"></i> 2024 Edward. All Rights Reserved.</p>
+     </footer>
 
     <script src="/assets/js/scripts.js"></script>
 
