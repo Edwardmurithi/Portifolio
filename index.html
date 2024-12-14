@@ -11,22 +11,28 @@
     <!-- header section -->
    <header class="header">
         <nav class="navbar container flex">
-            <h1 class="logo" id="Home">
-                <a href="index.html">Edward Mutethia</a>
-            </h1>     
-            <ul class="flex" >
-                <li><a href="#index">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Contacts</a></li>                
-            </ul>
+            <div class="logo" id="Home">
+                <a href="index.html">Edward <span class="second-name">Murithi</span></a>
+            </div>
+            <div class="nav-Links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#index">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contacts">Contacts</a></li>              
+                </ul>
+            </div>
+            <div>
+                <a href="/assets/img/cv.pdf" target="_blank"><button class="btn btn-download">Download Cv</button></a>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>    
    </header>
 
    <!-- main section -->
     <main>
-
        <!-- hero section -->
         <section class="hero-section" id="index">
             <div class="hero-ctn">
@@ -36,11 +42,29 @@
                 </p>
                 <a href="#projects" ><button class="btn">View my work</button></a>
                 <a href="#contacts" ><button class="btn btn-connect">Let Connect</button></a>
+                <div class="social-ctn">
+                    <ul class="social-links hero-links">
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
+                
             </div>
         </section>
         
         <!-- about section -->
-         <section class="about container" id="about">
+         <section class="about-section container" id="about">
             <p id="description">Who I Am</p>
             <h2>About Me</h2>
             <div class="about-container grid">
@@ -54,6 +78,28 @@
                         years of experience in web development, backend engineering, and project management. I 
                         bring both technical skills and creative problem-solving to every project.
                     </p>
+
+                    <div class="background-info">
+                        <div class="skills info-item">
+                            <h4>Skills</h4>
+                            <ul>
+                                <h5>Web & Moblie Development</h5>
+                                <li>Web & Mobile App Development </li>
+                                <h5>Graphic Design</h5>
+                                <li>Visual storytelling that captivates.</li>
+                                <h5>UI/UX</h5>
+                                <li>Prototyping & Wireframing</li>
+                                <h5>Technical Support</h5>
+                                <li>Reliable IT support</li>
+                            </ul>
+                        </div>
+                        <div class="experience info-item">
+                            <h4>Experience</h4>
+                        </div>
+                        <div class="education info-item">
+                            <h4>Education</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
          </section>
