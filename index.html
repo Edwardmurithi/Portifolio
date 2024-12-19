@@ -2,242 +2,193 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tech with Edward</title>
     <script src="assets/font-awesome/all.js"></script>
     <link rel="stylesheet" href="/assets/css/styles.css">
-    <title>tech with Edward</title>
 </head>
-<body>
+<div>
     <!-- header section -->
-   <header class="header">
-        <nav class="navbar container flex">
-            <div class="logo" id="Home">
-                <a href="index.html">Edward <span class="second-name">Murithi</span></a>
-            </div>
-            <div class="nav-Links" id="navLinks">
-                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
-                <ul>
+   <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Edward</a>
+                <ul id="navLinks">
                     <li><a href="#index">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contacts">Contacts</a></li>              
+                    <li><a href="#contacts">Contacts</a></li>
+                    <i class="fa fa-xmark" onclick="hideMenu()"></i>              
                 </ul>
-            </div>
-            <div>
-                <a href="/assets/img/cv.pdf" target="_blank"><button class="btn btn-download">Download Cv</button></a>
-            </div>
-            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
-        </nav>    
-   </header>
-
-   <!-- main section -->
-    <main>
-       <!-- hero section -->
-        <section class="hero-section" id="index">
-            <div class="hero-ctn">
-                <h2 class="greetings">Transforming Ideas Into Digital Excellence</h2>
-                <p class="description">
-                    Creative Solutions for Web Development, Design, and Beyond.
-                </p>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1 class="greetings">Transforming Ideas Into Digital Excellence</h1>
+                <p>Creative Solutions for Web Development, Design, and Beyond.</p>
                 <a href="#projects" ><button class="btn">View my work</button></a>
                 <a href="#contacts" ><button class="btn btn-connect">Let Connect</button></a>
-                <div class="social-ctn">
-                    <ul class="social-links hero-links">
-                        <li>
-                            <a href=""></a>
-                        </li>
-                        <li>
-                            <a href=""></a>
-                        </li>
-                        <li>
-                            <a href=""></a>
-                        </li>
-                        <li>
-                            <a href=""></a>
-                        </li>
-                        <li><a href=""></a></li>
-                    </ul>
-                </div>
-                
             </div>
-        </section>
+        </div>    
+    </div>
         
-        <!-- about section -->
-         <section class="about-section container" id="about">
-            <p id="description">Who I Am</p>
-            <h2>About Me</h2>
-            <div class="about-container grid">
-                <div class="img-ctn">
+    <!-- about section -->
+    <div id="about">
+        <div class="container">
+            <h1 class="sub-title">About Me</h1>
+            <div class="row">
+                <div class="about-col-1">
                     <img src="/assets/img/profile.webp" alt="image">
                 </div>
-                <div class="about-description">
+                <div class="about-col-2">
                     <p>
                         I am Edward, a dedicated and innovative <span class="highlight">Software Engineer</span> 
                         with expertise in building scalable, efficient, and impactiful digital solutions. With 
                         years of experience in web development, backend engineering, and project management. I 
                         bring both technical skills and creative problem-solving to every project.
                     </p>
-
-                    <div class="background-info">
-                        <div class="skills info-item">
-                            <h4>Skills</h4>
-                            <ul>
-                                <h5>Web & Moblie Development</h5>
-                                <li>Web & Mobile App Development </li>
-                                <h5>Graphic Design</h5>
-                                <li>Visual storytelling that captivates.</li>
-                                <h5>UI/UX</h5>
-                                <li>Prototyping & Wireframing</li>
-                                <h5>Technical Support</h5>
-                                <li>Reliable IT support</li>
-                            </ul>
-                        </div>
-                        <div class="experience info-item">
-                            <h4>Experience</h4>
-                        </div>
-                        <div class="education info-item">
-                            <h4>Education</h4>
-                        </div>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute.</li>
+                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                            <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>UI/UX Design Training at ET Institute.</li>
+                            <li><span>2016</span><br>MBA from MIT Bangalore</li>
+                            <li><span>2014</span><br>BBA from ISM Bangalore.</li>
+                        </ul>
+                    </div>      
                 </div>
             </div>
-         </section>
+        </div>
+    </div>
 
-         <!-- services section -->
-         <section class="services container" id="services">
-            <p id="description">What I Do</p>
-            <h2>Services</h2>
-            <p>
-                I offer a wide range of professional services to help businesses grow, streamline operations, and deliver exceptional digital experiences. Whether you need stunning visuals, a robust web presence, or technical support, I'm here to bring your ideas to life.
-            </p>
-            <div class="service-list grid">
-                <div class="service-item">
-                    <h4>Web Development & Hosting</h4>
+    <!---------------------------services section----------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <p>I offer a wide range of professional services to help businesses grow, streamline operations, and deliver exceptional digital experiences. Whether you need stunning visuals, a robust web presence, or technical support, I'm here to bring your ideas to life.</p>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Development & Hosting</h2>
                     <p>
                         Empowering your online presence with mordern websites and reliable hosting. Get Custom Website Development,
                         E-commerce Solutions, Hosting & Domain Management, SEO Optimization for better visibility in search engines.
                     </p>
+                    <a href="#">Learn more</a>
                 </div>
-                <div class="service-item">
-                    <h4>UI/UX Design</h4>
-                    <p>Designing user-centered experiences that delight.</p>
-                    <p>Prototyping & Wireframing, Usability Testing, and Accessibility Audits.</p>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Designing user-centered experiences that delight. Prototyping & Wireframing, Usability Testing, and Accessibility Audits.</p>
+                    <a href="#">Learn more</a>
                 </div>
-                <div class="service-item">
-                    <h4>Mobile App Development</h4>
-                    <p>Get powerful mobile solutions for Android and IOS.</p>
-                    <p>Custom App Development, Cross-Platform Apps, Integration with APIs, Maintenance and Updates</p>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Mobile App Development</h2>
+                    <p>Get powerful mobile solutions for Android and IOS. Custom App Development, Cross-Platform Apps, Integration with APIs, Maintenance and Updates.</p>
+                    <a href="#">Learn more</a>
                 </div>
-                <div class="service-item">
-                    <h4>Graphic Design</h4>
-                    <p>Visual storytelling that captivates and communicates.</p>
-                    <p>Get Custom Logo Design, Branding Packages, Digital & Print Design, Illustrations and Infographics.</p>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Graphic Design</h2>
+                    <p>Visual storytelling that captivates and communicates. Get Custom Logo Design, Branding Packages, Digital & Print Design, Illustrations and Infographics.</p>
+                    <a href="#">Learn more</a>
                 </div>
-                <div class="service-item item5">
-                    <h4>Technical Support</h4>
-                    <p>Get reliable support ie, System Troubleshooting, Network Setup & Maintenance, Device Installation & Configuration and IT Consultation to keep your systems running smoothly</p>
-                </div>
-            </div>
-            <!-- end services -->
-         </section>
-         
-         <!-- Project Section  -->
-         <section class="projects-ctn container" id="projects">
-            <p id="description">My work</p>
-            <h2>Projects</h2>
-            <p>
-                Here are some of the projects I've worked on, showcasing my skills in design, development, and problem solving.
-            </p>
-            <div class="project-list grid">
-                <div class="project-item">
-                    <div class="project-img">
-                        <img src="/assets/img/campusconnect.webp" alt="CampusConnect image">
-                    </div>
-                    <h3>CampusConnect App</h3>
-                    <div class="project-btn">
-                        <a href="https//github.com/Edwardmurithi:"><button class="btn">GitHub</button></a>
-                        <a href=""><button class="btn">Live Demo</button></a>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-img">
-                        <img src="/assets/img/project-1.png" alt="Social Network image">
-                    </div>
-                    <h3>Social Network</h3>
-                    <div class="project-btn">
-                        <a href="https//github.com/Edwardmurithi:"><button class="btn">GitHub</button></a>
-                        <a href=""><button class="btn">Live Demo</button></a>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-img">
-                        <img src="/assets/img/project-2.png" alt="remider App">
-                    </div>
-                    <h3>Remider</h3>
-                    <div class="project-btn">
-                        <a href="https//github.com/Edwardmurithi:"><button class="btn">GitHub</button></a>
-                        <a href=""><button class="btn">Live Demo</button></a>
-                    </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Technical Support</h2>
+                    <p>Get reliable support ie, System Troubleshooting, Network Setup & Maintenance, Device Installation & Configuration and IT Consultation to keep your systems running smoothly.</p>
+                    <a href="#">Learn more</a>
                 </div>
             </div>
-            <!-- end projects -->
-         </section>
-        
-         <!-- Contact Section -->
-         <section class="contact-section container" id="contacts">
-            <p id="description">Let's Work Together</p>
-            <h2>Contact Me</h2>
-            <p>Have a project in mind? Need support? I'd love to here from you. Get in touch and lets create something amazing</p>
-            <p>Send me a message, and I'll get back to you as soon as possible.</p>
-            <div class="contact-ctn grid">
-                <div class="contact-details">
-                    <div class="address address-info">
-                        <h4>Address</h4>
-                        <p>158, Runyenjes, Embu</p>
+        </div>
+    </div>
+    
+    <!----------------------------Portifolio------------------------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <p>Here are some of the projects I've worked on, showcasing my skills in design, development, and problem solving.</p>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/assets/img/project-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you the talented people around the world.
+                            Download it from play store
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
-                    <div class="email address-info">
-                        <h4>Email</h4>
-                        <p>murithiedward330@gmail.com</p>
-                    </div>
-                    <div class="phone address-info">
-                        <h4>Phone</h4>
-                        <p>+254708194272</p>
-                    </div>
-
-                    <ul class="social-links">
-                        <li>
-                            <a href=""></a>
-                        </li>
-                        <li>
-                            <a href=""></a>
-                        </li>
-                        <li>
-                            <a href=""></a>
-                        </li>
-                    </ul>
                 </div>
-                <div class="contact-form">
+                <div class="work">
+                    <img src="/assets/img/project-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you the talented people around the world.
+                            Download it from play store
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/assets/img/project-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you the talented people around the world.
+                            Download it from play store
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!---------------------------------Contact---------------->
+    <div id="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> murithiedward@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +254708194272</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="/assets/img/cv.pdf" class="btn btn2" download>Download Cv</a>
+                </div>
+                <div class="contact-right">
                     <form action="">
-                        <div>
-                            <input type="text" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div>
-                            <input type="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div>
-                            <textarea name="content" id="content" placeholder="Enter Your message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-send">Send Message</button>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Send</button>
                     </form>
                 </div>
             </div>
-            <!-- end contact -->
-         </section>
-    </main>
-    <!-- end main -->
+        </div>
+    </div>
 
     <!-- footer section -->
      <footer class="footer-ctn">
