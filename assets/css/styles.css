@@ -411,6 +411,7 @@ form .btn2 {
 /* utilities */
 .container {
     padding: 10px 10%;
+    overflow: hidden;
 }
 
 .btn {
@@ -428,8 +429,7 @@ form .btn2 {
 
 
 /* ------------------css for small screen----------- */
-nav .fa-xmark,
-nav .fa-bars {
+.fa-solid {
     display: none;
 }
 
