@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Flate Arc Italic",
+    "workbench.colorTheme": "Material Theme",
     "python.testing.unittestArgs": [
         "-v",
         "-s",
