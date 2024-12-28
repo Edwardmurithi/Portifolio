@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    font-size: 15px;
+    font-size: 18px;
     color: var(--text-color);
     background: var(--background-color);
 }
@@ -98,8 +98,8 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    margin-top: 15%;
-    font-size: 20px;    
+    margin: 20% 0;
+    font-size: 20px;   
 }
 
 .header-text h1 {
@@ -118,18 +118,34 @@ nav ul li a:hover::after {
     border-radius: 50px;
 }
 
+
 .header-text .btn-connect {
     background: transparent;
     border: 2px solid #a600f4;
 }
 
+.header-text .social-icons {
+    margin: 20px 0;
+}
 
+.header-text .social-icons div {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #6a00f4;
+    border-radius: 50px;
+}
+
+.header-text .social-icons a {
+    font-size: 40px;
+
+}
 
 /* --------------About--------------- */
 #about {
-    padding: 80px 0;
     color: var(--text-color);
     background: #101020;
+    padding: 30px 0;
 }
 
 .row {
@@ -145,7 +161,7 @@ nav ul li a:hover::after {
 .about-col-1 img {
     width: 100%;
     border-radius: 15px;
-    background: var(--secondary-accent);
+    background: linear-gradient(#6a00f4, #a600f4);
 }
 
 .about-col-2 {
@@ -153,6 +169,7 @@ nav ul li a:hover::after {
 }
 
 .sub-title {
+    margin: 30px 0;
     font-size: 40px;
     font-weight: 600;
     text-align: center;
@@ -217,7 +234,7 @@ nav ul li a:hover::after {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
-    margin: 50px;
+    margin: 50px 0;
 }
 
 
@@ -241,21 +258,27 @@ nav ul li a:hover::after {
     margin-bottom: 15px;
 }
 
+.services-list div p {
+    font-size: 16px;
+    font-family: serif;
+}
+
 .services-list div a {
     text-decoration: none;
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 20px;
     display: inline-block;
 }
 
 .services-list div:hover {
-    transform: scale(1.1);
+    transform: translateY(-10px);
 }
 
 
 /* ----------------------portfolio------------------- */
 #projects {
+    padding: 30px 0;
     background: #101020;
 }
 
@@ -263,7 +286,7 @@ nav ul li a:hover::after {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
-    margin: 50px;
+    margin: 50px 0;
 }
 
 .work {
@@ -325,9 +348,6 @@ nav ul li a:hover::after {
     height: 100%;
 }
 
-.btn:hover {
-    background: var(--primary-accent);
-}
 
 
 /* ---------------------------contact------------------- */
@@ -358,7 +378,7 @@ nav ul li a:hover::after {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #ffd700;
+    color: #a600f4;
     display: inline-block;
     transition: transform 0.5s;
 }
@@ -411,7 +431,7 @@ form .btn2 {
     padding: 70px 0;
     text-align: center;
     color: var(--text-color);
-    background: linear-gradient(to top, #6a00f4, #a600f4)
+    background: #101020;
 }
 
 /* utilities */
@@ -431,7 +451,7 @@ form .btn2 {
     text-decoration: none;
     color: var(--text-color);
     background: linear-gradient(to right, #6a00f4 60%, #a600f4);
-    transition: background 0.5s;
+    transition: background 0.5s ease;
 }
 
 
@@ -485,6 +505,11 @@ nav ul .fa-xmark {
     top: 25px;
     left: 25px;
     cursor: pointer;
+}
+
+.header-text .social-icons a {
+    font-size: 20px;
+
 }
 
 .sub-title {
