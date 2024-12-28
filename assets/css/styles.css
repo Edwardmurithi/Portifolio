@@ -1,9 +1,9 @@
 :root {
-    --primary-accent: #1e90ff;
-    --secondary-accent: #b0bec5;
-    --text-color: #333333;
+    --primary-accent: #6a00f4;
+    --secondary-accent: #ff00ff;
+    --text-color: #ffffff;
     --highlight-color: #32cd32;
-    --background-color: #ffffff;
+    --background-color: #1A1A2E;
 }
 
 * {
@@ -20,35 +20,33 @@ html {
 body {
     font-size: 15px;
     color: var(--text-color);
+    background: var(--background-color);
 }
 
 ul {
     list-style-type: none;
 }
 
-img {
-    width: 100%;
-}
-
 a {
     text-decoration: none;
-    color: var(--secondary-accent);
+    color: #ff00ff;
 }
 
-h1, h2, p {
-    text-align: center;
-}
 
-h1 {
+/* h1 {
     margin-bottom: 20px;
-}
+} */
 
 
 /* Navbar */
 #header {
     width: 100%;
-    height: 100vh;
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(/assets/img/software-engineer.webp) no-repeat center/cover;
+    position: fixed;
+    top: 0;
+    color: #ffffff;
+    background-color: #1A1A2E;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    z-index: 100;
 }
 
 nav {
@@ -58,15 +56,16 @@ nav {
     flex-wrap: nowrap;
 }
 
-.logo {
-    width: 140px;
-}
-
 nav .logo {
+    width: 140px;
     font-size: 25px;
     color: var(--primary-accent);
     font-weight:bold;
 }
+
+.logo span {
+    color: #ff00ff;
+} 
 
 
 nav ul {
@@ -99,30 +98,38 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    margin-top: 10%;
-    font-size: 30px;
-    color: var(--secondary-accent);
-    text-align: center;
+    margin-top: 15%;
+    font-size: 20px;    
 }
 
-.header-text h2 {
-    font-size: 60px;
-    margin-top: 20px;
+.header-text h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #ff00ff
 }
 
-.header-text h1 span {
-    color: var(--primary-accent);
-}
+/* .header-text h1 span {
+    color: var(--text-color);
+} */
 
 .header-text .btn {
-    margin: 40px 0;
+    margin: 50px 10px;
+    border: none;
+    border-radius: 50px;
 }
+
+.header-text .btn-connect {
+    background: transparent;
+    border: 2px solid #a600f4;
+}
+
 
 
 /* --------------About--------------- */
 #about {
     padding: 80px 0;
     color: var(--text-color);
+    background: #101020;
 }
 
 .row {
@@ -146,9 +153,9 @@ nav ul li a:hover::after {
 }
 
 .sub-title {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 600;
-    color: var(--primary-accent);
+    text-align: center;
 }
 
 .tab-titles {
@@ -215,7 +222,7 @@ nav ul li a:hover::after {
 
 
 .services-list div {
-    background: #ecebeb;
+    background: linear-gradient(#6a00f4, #a600f4);
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -243,14 +250,13 @@ nav ul li a:hover::after {
 }
 
 .services-list div:hover {
-    background: var(--primary-accent);
-    transform: translateY(-10px);
+    transform: scale(1.1);
 }
 
 
 /* ----------------------portfolio------------------- */
-#portfolio {
-    padding: 5px 0;
+#projects {
+    background: #101020;
 }
 
 .work-list {
@@ -290,7 +296,6 @@ nav ul li a:hover::after {
     text-align: center;
     font-size: 14px;
     transition: height 0.5s;
-    color: var(--background-color);
 }
 
 .layer h3 {
@@ -304,12 +309,13 @@ nav ul li a:hover::after {
     text-decoration: none;
     font-size: 10px;
     line-height: 60px;
-    background: #fff;
+    background: #ff00ff;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     text-align: center;
 }
+
 
 .work:hover img {
     transform: scale(1.1);
@@ -352,7 +358,7 @@ nav ul li a:hover::after {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #ababab;
+    color: #ffd700;
     display: inline-block;
     transition: transform 0.5s;
 }
@@ -374,7 +380,7 @@ form input, form textarea {
     width: 100%;
     border: 0;
     outline: none;
-    background: #ecebeb;
+    background: #101020;
     padding: 15px;
     margin: 15px 0;
     color: var(--text-color);
@@ -404,8 +410,8 @@ form .btn2 {
     height: 70px;
     padding: 70px 0;
     text-align: center;
-    color: var(--background-color);
-    background: #333333;
+    color: var(--text-color);
+    background: linear-gradient(to top, #6a00f4, #a600f4)
 }
 
 /* utilities */
@@ -417,13 +423,14 @@ form .btn2 {
 .btn {
     display: inline-block;
     margin: 10px auto;
+    font-size: 16px;
     width: fit-content;
     border: 1px solid var(--primary-accent);
     padding: 14px 50px;
-    border-radius: 6px;
+    border-radius: 10px;
     text-decoration: none;
-    color: var(--background-color);
-    background: linear-gradient(to right, var(--primary-accent) 60%, var(--secondary-accent));
+    color: var(--text-color);
+    background: linear-gradient(to right, #6a00f4 60%, #a600f4);
     transition: background 0.5s;
 }
 
@@ -447,7 +454,7 @@ form .btn2 {
     nav .fa-bars {
     display: block;
     font-size: 25px;
-    color: var(--background-color);
+    color: #fff;
 }
 
 nav ul {
@@ -465,6 +472,12 @@ nav ul {
 
 nav ul li {
     margin: 25px;
+}
+
+.header-text .btn {
+    margin: 70px 0 0 0;
+    display: inline-block;
+    font-size: 10px;
 }
 
 nav ul .fa-xmark {
