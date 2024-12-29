@@ -434,6 +434,12 @@ form .btn2 {
     background: #101020;
 }
 
+.footer a {
+    display: inline-block;
+    color: #6a00f4;
+    text-decoration: underline;
+}
+
 /* utilities */
 .container {
     padding: 10px 10%;
@@ -496,8 +502,7 @@ nav ul li {
 
 .header-text .btn {
     margin: 70px 0 0 0;
-    display: inline-block;
-    font-size: 10px;
+    display: inline;
 }
 
 nav ul .fa-xmark {
