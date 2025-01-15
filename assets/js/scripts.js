@@ -12,8 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Hide menu when clicking outside.
   document.addEventListener('click', (event) => {
       if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
-          // menu.style.display = 'none';
-          // menuIcon.classList.remove('open');
           menu.classList.remove('active');
           menu.classList.remove('open');
       }
