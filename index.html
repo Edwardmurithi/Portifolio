@@ -101,32 +101,36 @@
             <p>I offer a wide range of professional services to help businesses grow, streamline operations, and deliver exceptional digital experiences. Whether you need stunning visuals, a robust web presence, or technical support, I'm here to bring your ideas to life.</p>
             <div class="services-list">
                 <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Development & Hosting</h2>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Development</h2>
                     <p>
-                        Empowering your online presence with mordern websites and reliable hosting.
+                        Specializing in full-stack web development, delivering robust, scalable, and user-centric web solutions from front-end to back-end.
                     </p>
                 </div>
                 <div>
-                    <i class="fas fa-code"></i>
+                    <i class="fas fa-layer-group"></i>
                     <h2>UI/UX Design</h2>
-                    <p>Designing user-centered experiences that delight. </p>
+                    <p>Designing intuitive and aesthetically pleasing user interfaces with a focus on seamless user experiences and functionality.</p>
                 </div>
                 <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>Mobile App Development</h2>
-                    <p>Get powerful mobile solutions for Android and IOS.</p>
+                    <i class="fas fa-mobile-alt"></i>
+                    <h2>App Development</h2>
+                    <p>Creating user-friendly mobile apps with seamless functionality and a focus on performance.</p>
                 </div>
                 <div>
-                    <i class="fas fa-code"></i>
+                    <i class="fas fa-pencil"></i>
                     <h2>Graphic Design</h2>
-                    <p>Visual storytelling that captivates and communicates.</p>
+                    <p>Crafting visually stunning designs that communicate your brand’s message with creativity and precision.</p>
                 </div>
-                <div class="last">
-                    <i class="fas fa-code"></i>
+                <div>
+                    <i class="fa-solid fa-gear"></i>
                     <h2>Technical Support</h2>
-                    <p>Get reliable support ie, System Troubleshooting, Network Setup & Maintenance, Device Installation & Configuration and IT Consultation to keep your systems running smoothly.</p>
-
+                    <p>Offering expert technical support to resolve issues quickly and keep your systems running smoothly.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-film"></i>
+                    <h2>Video Editing</h2>
+                    <p>Transforming raw footage into polished, engaging videos that captivate and communicate effectively.</p>
                 </div>
             </div>
         </div>
@@ -182,17 +186,18 @@
                     <div class="social-icons">
                         <a href="https://web.facebook.com/TechWithEdward" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                         <a href="https://x.com/TechWithEdward" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
-                        <a href="https://wa.me/+254708194272 target="_blank""><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://wa.me/+254708194272"><i class="fa-brands fa-whatsapp"></i></a>
                         <a href="https://www.linkedin.com/in/edwardmurithi" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                     <a href="/assets/img/cv.pdf" class="btn btn2" download>Download Cv</a>
                 </div>
                 <div class="contact-right">
-                    <form action="">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <form action="" id="contact-form">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        <textarea name="message" id="message" rows="6" placeholder="Your Message" required></textarea>
                         <button type="submit" class="btn btn2">Send</button>
+                        <p class="contact_message" id="contact-message"></p>
                     </form>
                 </div>
             </div>
@@ -206,8 +211,9 @@
         <a href="https://wa.me/+254708194272" target="_blank">Whatsapp</a>
         <p>&copy; <i id="year"></i> 2024 Edward. All Rights Reserved.</p>
      </div>
-
-    <script src="hhtps://cdn.emailjs.com/dist/email.min.js"></script>
+    
+     <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="/assets/js/scripts.js"></script>
 </body>
 </html>

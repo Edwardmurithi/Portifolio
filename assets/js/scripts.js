@@ -4,11 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Toggle menu to display
   menuIcon.addEventListener('click', () => {
-      event.stopPropagation() //prevent click from propagating to the documentt.
+      event.stopPropagation(); //prevent click from propagating to the document.
+      menu.classList.toggle('active');
       menuIcon.classList.toggle('open');
-      // menu.style.display = menu.style.display === 'block' ? 'none':'block';
-      menu.classList.toggle('active')
-  })
+  });
 
   // Hide menu when clicking outside.
   document.addEventListener('click', (event) => {
@@ -16,26 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
           // menu.style.display = 'none';
           // menuIcon.classList.remove('open');
           menu.classList.remove('active');
-          menu.classList.remove('open')
+          menu.classList.remove('open');
       }
   });
 });
 
-// Clickable menu bar
-// function myFunction(x) {
-//     x.classList.toggle("change");
-//   }
-
-/* Toggle Menu */
-// var navLinks = document.getElementById("navLinks");
-
-// function showMenu() {
-//     navLinks.style.right = "0";
-// }
-
-// function hideMenu() {
-//     navLinks.style.right = "-200px"
-// }
 
 // about tablinks
 var tablinks = document.getElementsByClassName("tab-links")
@@ -69,27 +53,25 @@ function opentab(tabname) {
 
 
 // Initialize EmailJS with your user ID
-emailjs.init('your_user_id'); // Replace 'your_user_id' with your EmailJS user ID
+const contactForm = document.getElementById('contact-form'),
+  contactMessage = document.getElementById('contact-message');
 
-document.getElementById('contact-form').addEventListener('submit', function (e) {
-  e.preventDefault(); // Prevent the default form submission behavior
+const sendEmail = (e) => {
+  e.preventDefault();
 
-  const serviceID = 'service_1a0t8kg'; // Replace with your EmailJS service ID
-  const templateID = 'template_h7xwbdk'; // Replace with your EmailJS template ID
+  //serviceID - templateID - #form - publicKey
+  emailjs.sendEmail('service_1a0t8kg','template_h7xwbdk','#contact-form','3G2osv0MQjHFyMLBu')
 
-  const formData = {
-    name: document.getElementById('name').value,
-    email: document.getElementById('email').value,
-    message: document.getElementById('message').value,
-  };
+  .then(() => {
+    // Show message sent
+    contactMessage.textContent = 'Message sent successfully.'
 
-  emailjs.send(serviceID, templateID, formData)
-    .then(response => {
-      alert('Email sent successfully!');
-      document.getElementById('contact-form').reset(); // Clear the form
-    })
-    .catch(error => {
-      alert('Failed to send email. Please try again.');
-      console.error('EmailJS Error:', error);
-    });
-});
+    // remove message after five seconds
+    setTimeout(() => {
+      contactMessage.textContent = ''
+    }, 5000)
+
+    // clear input fields
+    // contactForm
+  })
+}
