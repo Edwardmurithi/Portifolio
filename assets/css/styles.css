@@ -97,7 +97,6 @@ nav ul li a:hover::after {
 /* Hero styling */
 .hero {
     width: 100%;
-    height: 100vh;
 }
 
 .header-text {
@@ -148,13 +147,11 @@ nav ul li a:hover::after {
 
 .header-text .social-icons a {
     font-size: 40px;
-
 }
 
 /* --------------About--------------- */
 #about {
-    color: var(--text-color);
-    background: #101020;
+    background-color: #101020;
     padding: 30px 0;
 }
 
@@ -286,13 +283,12 @@ nav ul li a:hover::after {
     transform: scale(1.05);
 }
 
-.services-list 
-
 
 /* ----------------------portfolio------------------- */
-#projects {
+#portfolio {
     padding: 30px 0;
-    background: #101020;
+    background-color: #101020;
+
 }
 
 .work-list {
@@ -542,8 +538,9 @@ nav ul .fa-xmark {
     cursor: pointer;
 }
 
+
 .header-text .social-icons a {
-    font-size: 40px;
+    font-size: 25px;
 
 }
 
